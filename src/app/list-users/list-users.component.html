@@ -1,0 +1,19 @@
+<table class="table">
+    <thead>
+        <td>Id</td>
+        <td>Name</td>
+        <td>Age</td>
+        <td>profil</td>
+        <td>Action</td>
+    </thead>
+    <tbody *ngFor="let row of listUser$ | async">
+        <td>{{row.id}}</td>
+        <td>{{row.name}}</td>
+        <td>{{row.age}}</td>
+        <td>{{row.profil}}</td>
+        <td><button>Edit</button></td>
+    </tbody>
+</table>
+
+
+<app-creat-users></app-creat-users>

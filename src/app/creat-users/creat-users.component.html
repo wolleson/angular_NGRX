@@ -1,0 +1,23 @@
+<p>creat-users works!</p>
+<form id="form" #f="ngForm" (ngSubmit)="save()">
+    <div class="col-6">
+        <label for="">Id</label>
+        <input id="id" name="id" [(ngModel)] = "model.id" class="form-control" type="text">
+    </div>
+    <div class="col-6">
+        <label for="">Name</label>
+        <input id="name" name="name" [(ngModel)] = "model.name" class="form-control" type="text">
+    </div>
+    <div class="col-6">
+        <label for="">Age</label>
+        <input id="age" name="age" [(ngModel)] = "model.age" class="form-control" type="text">
+    </div>
+    <div class="col-6">
+        <label for="">Profil</label>
+        <input id="profil" name="id" [(ngModel)] = "model.profil" class="form-control" type="text">
+    </div>
+    <div class="col-6">
+        <button type="submit" class="btn btn-primary">Add</button>
+
+    </div>
+</form>
